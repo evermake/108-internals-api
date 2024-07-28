@@ -1,0 +1,35 @@
+{
+  "name": "internals-api",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.6.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --env-file=.env --watch ./src/main.ts",
+    "check": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "deps": "taze -wI"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.60.2",
+    "@effect/platform-node": "^0.55.2",
+    "@effect/schema": "^0.69.2",
+    "@notionhq/client": "^2.2.15",
+    "effect": "^3.5.8",
+    "effect-http": "^0.77.0",
+    "effect-http-node": "^0.17.3",
+    "notion-to-md": "^3.1.1",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.0",
+    "eslint": "9.5.0",
+    "eslint-plugin-format": "^0.1.2",
+    "taze": "^0.16.1",
+    "tsx": "^4.16.2"
+  }
+}
